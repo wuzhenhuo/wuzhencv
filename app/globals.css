@@ -1,0 +1,158 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Nothing Light — printed technical manual */
+  --background: #F5F5F5;
+  --foreground: #1A1A1A;
+  --card: #FFFFFF;
+  --card-foreground: #1A1A1A;
+  --popover: #FFFFFF;
+  --popover-foreground: #1A1A1A;
+  --primary: #000000;
+  --primary-foreground: #F5F5F5;
+  --secondary: #F0F0F0;
+  --secondary-foreground: #1A1A1A;
+  --muted: #F0F0F0;
+  --muted-foreground: #666666;
+  --accent: #D71921;
+  --accent-foreground: #FFFFFF;
+  --destructive: #D71921;
+  --destructive-foreground: #FFFFFF;
+  --border: #E8E8E8;
+  --input: #CCCCCC;
+  --ring: #000000;
+  --radius: 0rem;
+}
+
+.dark {
+  /* Nothing Dark — OLED instrument panel */
+  --background: #000000;
+  --foreground: #E8E8E8;
+  --card: #111111;
+  --card-foreground: #E8E8E8;
+  --popover: #111111;
+  --popover-foreground: #E8E8E8;
+  --primary: #FFFFFF;
+  --primary-foreground: #000000;
+  --secondary: #1A1A1A;
+  --secondary-foreground: #E8E8E8;
+  --muted: #111111;
+  --muted-foreground: #999999;
+  --accent: #D71921;
+  --accent-foreground: #FFFFFF;
+  --destructive: #D71921;
+  --destructive-foreground: #FFFFFF;
+  --border: #222222;
+  --input: #333333;
+  --ring: #FFFFFF;
+}
+
+@theme inline {
+  --font-sans: var(--font-space-grotesk), var(--font-noto-sans-sc), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-space-mono), ui-monospace, monospace;
+  --font-display: var(--font-doto), var(--font-space-mono), monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "ss01";
+  }
+  ::selection {
+    background: rgba(215, 25, 33, 0.2);
+    color: var(--foreground);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-doto), var(--font-space-mono), monospace;
+  }
+  .dot-grid {
+    background-image: radial-gradient(circle, #333333 1px, transparent 1px);
+    background-size: 16px 16px;
+  }
+  .dark .dot-grid {
+    background-image: radial-gradient(circle, #333333 1px, transparent 1px);
+  }
+  .dot-grid-subtle {
+    background-image: radial-gradient(circle, #E8E8E8 0.5px, transparent 0.5px);
+    background-size: 12px 12px;
+  }
+  .dark .dot-grid-subtle {
+    background-image: radial-gradient(circle, #222222 0.5px, transparent 0.5px);
+  }
+
+  /* Tech scan line animation */
+  @keyframes scan {
+    0% { top: -2px; opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 0.4; }
+    100% { top: 100%; opacity: 0; }
+  }
+  .scan-line {
+    animation: scan 6s linear infinite;
+    background: linear-gradient(to bottom, transparent, rgba(215,25,33,0.15), transparent);
+    height: 80px;
+    position: absolute;
+    inset-x: 0;
+    pointer-events: none;
+  }
+
+  /* Portrait glow effect */
+  .portrait-glow {
+    box-shadow: 0 0 0 1px rgba(215,25,33,0.1), 0 0 40px rgba(215,25,33,0.04);
+    transition: box-shadow 0.5s ease;
+  }
+  .portrait-glow:hover {
+    box-shadow: 0 0 0 1px rgba(215,25,33,0.25), 0 0 60px rgba(215,25,33,0.1);
+  }
+
+  /* Work card hover accent */
+  .work-card-hover {
+    transition: border-color 0.3s ease;
+  }
+  .work-card-hover:hover {
+    border-color: rgba(215,25,33,0.3);
+  }
+
+  /* Glowing accent line for section headers */
+  .accent-line::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--accent);
+    margin-bottom: 12px;
+    box-shadow: 0 0 8px rgba(215,25,33,0.6);
+  }
+}
