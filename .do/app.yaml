@@ -1,0 +1,16 @@
+name: wuzhencv
+region: sgp
+services:
+- name: web
+  github:
+    repo: wuzhenhuo/wuzhencv
+    branch: master
+    deploy_on_push: true
+  build_command: npm install -g pnpm && pnpm install && pnpm build
+  run_command: pnpm start
+  http_port: 3000
+  instance_size_slug: apps-s-1vcpu-0.5gb
+  instance_count: 1
+  environment_slug: node-js
+  routes:
+  - path: /
