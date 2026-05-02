@@ -1,5 +1,8 @@
 name: wuzhencv
 region: sgp
+domains:
+- domain: www.alexzhenwu.com
+  type: PRIMARY
 services:
 - name: web
   github:
