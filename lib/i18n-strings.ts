@@ -118,13 +118,9 @@ export const dict: Dict = {
   "contact.email.studio": { en: "Email · Studio", zh: "邮箱 · 工作室" },
   "contact.portfolio": { en: "Portfolio", zh: "作品集" },
   "contact.studio": { en: "Studio", zh: "工作室地址" },
-  "contact.studio.dept": {
-    en: "Beijing Dance Academy · Artificial Intelligence Research Institute",
-    zh: "北京舞蹈学院 · 人工智能研究院",
-  },
   "contact.studio.addr": {
-    en: "No. 1 Wan Shou Temple Road / Zhongguancun AI Latitude Community, Haidian District, Beijing",
-    zh: "北京市海淀区万寿寺路 1 号 / 中关村AI北纬社区",
+    en: "Zhongguancun AI Latitude Community · Macau Youth Entrepreneurship Incubation Centre",
+    zh: "中关村AI北纬社区，澳门青年创业孵化中心",
   },
   "contact.phone": { en: "Phone", zh: "电话" },
 

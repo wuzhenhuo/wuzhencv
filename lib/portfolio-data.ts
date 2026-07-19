@@ -186,11 +186,19 @@ export type Exhibition = {
 
 export const exhibitions: Exhibition[] = [
   {
+    year: "2026",
+    title: { en: "Homeward Flight", zh: "云海归雁" },
+    venue: {
+      en: "AI FilmFest Serbia · Official Selection",
+      zh: "塞尔维亚 AI 电影节 · 官方入围",
+    },
+  },
+  {
     year: "2025",
     title: { en: "Heart of the Machine · AI Film", zh: "机器之心 · AI 影像" },
     venue: {
-      en: "Beijing Film Academy Awards · BFA",
-      zh: "北京电影学院学院奖",
+      en: "Beijing Film Academy Awards (BFA) / AI Film 3 – AI Film and Art Festival, Finalist / Africa AI Creativity Week & Awards, Finalist",
+      zh: "北京电影学院学院奖 / AI Film 3· AI 电影与艺术节入围决选 / 非洲 AI 创意周颁奖礼入围决选",
     },
   },
   {

@@ -87,8 +87,7 @@ export function ContactSection() {
               <p className="font-mono text-[11px] tracking-[0.1em] uppercase text-muted-foreground">
                 {t("contact.studio")}
               </p>
-              <p className="text-foreground">{t("contact.studio.dept")}</p>
-              <p>{t("contact.studio.addr")}</p>
+              <p className="text-foreground">{t("contact.studio.addr")}</p>
             </div>
             <div className="space-y-2">
               <p className="font-mono text-[11px] tracking-[0.1em] uppercase text-muted-foreground">

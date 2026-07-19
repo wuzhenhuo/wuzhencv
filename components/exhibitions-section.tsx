@@ -22,7 +22,7 @@ export function ExhibitionsSection() {
         <ul className="divide-y divide-border">
           {exhibitions.map((e) => (
             <li
-              key={`${e.year}-${e.title.en}`}
+              key={`${e.year}-${e.title.en}-${e.venue.en}`}
               className="grid grid-cols-[64px_1fr] items-baseline gap-x-6 gap-y-1 py-5 md:grid-cols-[72px_1fr_auto] md:gap-x-10"
             >
               <span className="font-mono text-xs tracking-[0.04em] text-muted-foreground">
