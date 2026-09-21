@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils"
 import { useLanguage } from "@/components/language-provider"
 
 const CV_URL =
-  "https://drive.google.com/uc?export=download&id=17d58P8mKCdlchYL9afiQxUZz_eiJ7mZm"
+  "https://drive.google.com/uc?export=download&id=1D364CNTYODfe5yPokYN_tW65IvVjSb1M"
 
 type Variant = "primary" | "ghost" | "nav"
 
