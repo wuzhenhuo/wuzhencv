@@ -94,8 +94,8 @@ export const selectedWorks: Work[] = [
     subtitle: { en: "天工伎乐", zh: "Tian Gong Ji Yue" },
     role: { en: "Chief Creator", zh: "主创" },
     description: {
-      en: "Injecting ancient Eastern grace into the fast pace of competition. Inspired by the classical apsara (flying-musician) imagery of the Dunhuang murals, the choreography team — working from an understanding of the robot's entirely different body — drew on the solemn, dignified bearing of the Vajra guardian figures to sharpen the force, pauses, and direction of each movement, emphasizing a sculptural sense of weight and stability while preserving Dunhuang's highly recognizable visual forms. Awarded the Bronze Medal in the Dance Cheerleading Category at the 2026 World Humanoid Robot Games.",
-      zh: "在节奏鲜活的比赛中注入一股东方古韵。作品灵感源自敦煌壁画经典的伎乐飞天意象，编导团队在读懂机器人「完全不同的身体」的基础上，选取金刚力士凝重凛然的形象，强化动作的力度、停顿与方向，凸显雕塑感与稳定感，同时保留辨识度极高的敦煌造型。荣获 2026 世界人形机器人运动会舞蹈啦啦操类铜牌。",
+      en: "Inspired by the classical apsara (flying-musician) imagery of the Dunhuang murals, drawing on the solemn, dignified bearing of the Vajra guardian figures to sharpen the force, pauses, and direction of each movement, emphasizing a sculptural sense of weight and stability while preserving Dunhuang's highly recognizable visual forms. Awarded the Bronze Medal in the Dance Cheerleading Category at the 2026 World Humanoid Robot Games.",
+      zh: "灵感源自敦煌壁画经典的伎乐飞天意象，选取金刚力士凝重凛然的形象，强化动作的力度、停顿与方向，凸显雕塑感与稳定感，同时保留辨识度极高的敦煌造型。荣获 2026 世界人形机器人运动会舞蹈啦啦操类铜牌。",
     },
     tags: [
       { en: "Robotics", zh: "机器人" },
