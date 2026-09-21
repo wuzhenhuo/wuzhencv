@@ -71,8 +71,8 @@ export const selectedWorks: Work[] = [
     subtitle: { en: "超能少年", zh: "Superpowered Boys" },
     role: { en: "Chief Creator", zh: "主创" },
     description: {
-      en: "The robots are cast as youthful \"boys,\" showcasing their movement agility while foregrounding professional dance technique — creating a distinctive charm of contrast. In the choreography, motion-capture performers repeatedly refined the force dynamics of flips, turns, and jumps, striking a balance between the mechanical limits of the robots and artistic expression, emphasizing the power of each mechanical movement while delivering a lively, energetic stage style. Awarded the Silver Medal in the Dance Cheerleading Category at the 2026 World Humanoid Robot Games.",
-      zh: "将机器人设定为「少年」形象，在展现机器人运动灵活性的同时，突出舞蹈专业特色，形成独特的「反差萌」。舞蹈编排中，动捕演员反复优化翻腾、转体、跳跃动作的发力关系，在机械性能上限与艺术表达之间找到平衡，突出机械动作的力量感，呈现出活泼的舞台风格。荣获 2026 世界人形机器人运动会舞蹈啦啦操类银牌。",
+      en: "The robots are cast as youthful \"boys,\" showcasing their movement agility while creating a distinctive charm of contrast. Repeatedly refining the force dynamics of flips, turns, and jumps, the piece strikes a balance between the mechanical limits of the robots and artistic expression, emphasizing the power of each mechanical movement while delivering a lively, energetic stage style. Awarded the Silver Medal in the Dance Cheerleading Category at the 2026 World Humanoid Robot Games.",
+      zh: "将机器人设定为「少年」形象，在展现机器人运动灵活性的同时，形成独特的「反差萌」。反复优化翻腾、转体、跳跃动作的发力关系，在机械性能上限与艺术表达之间找到平衡，突出机械动作的力量感，呈现出活泼的舞台风格。荣获 2026 世界人形机器人运动会舞蹈啦啦操类银牌。",
     },
     tags: [
       { en: "Robotics", zh: "机器人" },

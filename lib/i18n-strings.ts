@@ -34,8 +34,8 @@ export const dict: Dict = {
   "hero.title.amp": { en: "&", zh: "与" },
   "hero.title.machine": { en: "machine.", zh: "机器之间。" },
   "hero.description": {
-    en: "Associate Professor at Beijing Dance Academy, National Level 2 Stage Art Designer, Ph.D. in Digital Media (MUST). Stage multimedia, humanoid robot performance, projection design, XR, AIGC film — designer for the Beijing 2022 Paralympic Games ceremonies. Silver Medal, 2025 World Humanoid Robot Games.",
-    zh: "北京舞蹈学院副教授，国家二级舞台美术设计师，澳门科技大学数字媒体博士。涵盖舞台多媒体、人形机器人表演、投影设计、XR 与 AI 影像，曾任北京 2022 冬残奥会开闭幕式多媒体设计。2025 世界人形机器人运动会银牌。",
+    en: "Associate Professor at Beijing Dance Academy, National Level 2 Stage Art Designer, Ph.D. in Digital Media (MUST). Stage multimedia, humanoid robot performance, projection design, XR, AIGC film — designer for the Beijing 2022 Paralympic Games ceremonies. Silver Medal, 2025 & 2026 World Humanoid Robot Games.",
+    zh: "北京舞蹈学院副教授，国家二级舞台美术设计师，澳门科技大学数字媒体博士。涵盖舞台多媒体、人形机器人表演、投影设计、XR 与 AI 影像，曾任北京 2022 冬残奥会开闭幕式多媒体设计。2025、2026 世界人形机器人运动会银牌。",
   },
   "hero.based": { en: "Based in Beijing · Macau", zh: "常驻 北京 · 澳门" },
   "hero.record": { en: "Record", zh: "履历亮点" },
