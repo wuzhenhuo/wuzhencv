@@ -34,10 +34,11 @@ export const dict: Dict = {
   "hero.title.amp": { en: "&", zh: "与" },
   "hero.title.machine": { en: "machine.", zh: "机器之间。" },
   "hero.description": {
-    en: "Associate Professor at Beijing Dance Academy, National Level 2 Stage Art Designer, Ph.D. in Digital Media (MUST). Stage multimedia, digital light sculpture, XR, AI film — designer for the Beijing 2022 Paralympic Games ceremonies. Silver Medal, 2025 World Humanoid Robot Games.",
-    zh: "北京舞蹈学院副教授，国家二级舞台美术设计师，澳门科技大学数字媒体博士。涵盖舞台多媒体、数字光雕、XR 与 AI 影像，曾任北京 2022 冬残奥会开闭幕式多媒体设计。2025 世界人形机器人运动会银牌。",
+    en: "Associate Professor at Beijing Dance Academy, National Level 2 Stage Art Designer, Ph.D. in Digital Media (MUST). Stage multimedia, humanoid robot performance, projection design, XR, AIGC film — designer for the Beijing 2022 Paralympic Games ceremonies. Silver Medal, 2025 World Humanoid Robot Games.",
+    zh: "北京舞蹈学院副教授，国家二级舞台美术设计师，澳门科技大学数字媒体博士。涵盖舞台多媒体、人形机器人表演、投影设计、XR 与 AI 影像，曾任北京 2022 冬残奥会开闭幕式多媒体设计。2025 世界人形机器人运动会银牌。",
   },
   "hero.based": { en: "Based in Beijing · Macau", zh: "常驻 北京 · 澳门" },
+  "hero.record": { en: "Record", zh: "履历亮点" },
   "hero.cta": { en: "View selected works", zh: "浏览精选作品" },
   "hero.cv": { en: "Download CV", zh: "下载简历" },
   "nav.cv": { en: "CV", zh: "简历" },
@@ -56,8 +57,8 @@ export const dict: Dict = {
   "about.and2": { en: ", ", zh: "、" },
   "about.p1.end": { en: ".", zh: "的交汇之处。" },
   "about.p2": {
-    en: "He served as multimedia designer for the opening and closing ceremonies of the Beijing 2022 Winter Paralympic Games. His work Yingge Dance won the Silver Medal in the Single Routine Dance Category at the 2025 World Humanoid Robot Games. His AI film Heart of the Machine received multiple international awards, including First Prize in the AIGC Innovation Track at the 2025 China Innovative Video Competition. His film works have been screened at Lincoln Center in New York and numerous museums and biennales worldwide.",
-    zh: "曾担任 2022 北京冬残奥运动会开闭幕式多媒体设计，作品《英歌舞》获 2025 世界人形机器人运动会单机位舞蹈组银牌。AI 影像《机器之心》获多项国际奖项，包括 2025 中国创新视频大赛 AIGC 创新赛道一等奖。影像作品曾于纽约林肯中心及众多美术馆与双年展中展映。",
+    en: "He served as multimedia designer for the opening and closing ceremonies of the Beijing 2022 Winter Paralympic Games. His work Yingge Dance won the Silver Medal in the Single Routine Dance Category at the 2025 World Humanoid Robot Games, and in 2026 his productions Superpowered Boys and Tian Gong Ji Yue won Silver and Bronze in the Dance Cheerleading category at the 2nd World Humanoid Robot Games. His AIGC film Heart of the Machine received multiple international awards, including First Prize in the AIGC Innovation Track at the 2025 China Innovative Video Competition. His film works have been screened at Lincoln Center in New York and numerous museums and biennales worldwide.",
+    zh: "曾担任 2022 北京冬残奥运动会开闭幕式多媒体设计，作品《英歌舞》获 2025 世界人形机器人运动会单机位舞蹈组银牌；2026 年作品《超能少年》《天工伎乐》分获第二届世界人形机器人运动会舞蹈啦啦操类银牌、铜牌。AI 影像《机器之心》获多项国际奖项，包括 2025 中国创新视频大赛 AIGC 创新赛道一等奖。影像作品曾于纽约林肯中心及众多美术馆与双年展中展映。",
   },
   "about.p3": {
     en: "Wu has led the development of the DanceLab motion database and the Theatre of Tomorrow (TOT) smart performance platform, both of which have received national-level science and technology innovation awards. His research and creative practice focus on the integration of embodied intelligence, generative AI, and digital performance systems.",

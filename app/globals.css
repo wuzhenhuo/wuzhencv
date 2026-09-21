@@ -4,56 +4,56 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Nothing Light — printed technical manual */
-  --background: #F5F5F5;
-  --foreground: #1A1A1A;
-  --card: #FFFFFF;
-  --card-foreground: #1A1A1A;
-  --popover: #FFFFFF;
-  --popover-foreground: #1A1A1A;
-  --primary: #000000;
-  --primary-foreground: #F5F5F5;
-  --secondary: #F0F0F0;
-  --secondary-foreground: #1A1A1A;
-  --muted: #F0F0F0;
-  --muted-foreground: #666666;
-  --accent: #D71921;
-  --accent-foreground: #FFFFFF;
-  --destructive: #D71921;
+  /* Warm editorial — cream paper, ink navy, gold accent */
+  --background: #F5F0E6;
+  --foreground: #171A2E;
+  --card: #FBF7EF;
+  --card-foreground: #171A2E;
+  --popover: #FBF7EF;
+  --popover-foreground: #171A2E;
+  --primary: #171A2E;
+  --primary-foreground: #F5F0E6;
+  --secondary: #ECE4D3;
+  --secondary-foreground: #171A2E;
+  --muted: #ECE4D3;
+  --muted-foreground: #746C58;
+  --accent: #B8924F;
+  --accent-foreground: #171A2E;
+  --destructive: #B3261E;
   --destructive-foreground: #FFFFFF;
-  --border: #E8E8E8;
-  --input: #CCCCCC;
-  --ring: #000000;
+  --border: #E3DAC5;
+  --input: #D8CBAE;
+  --ring: #171A2E;
   --radius: 0rem;
 }
 
 .dark {
-  /* Nothing Dark — OLED instrument panel */
-  --background: #000000;
-  --foreground: #E8E8E8;
-  --card: #111111;
-  --card-foreground: #E8E8E8;
-  --popover: #111111;
-  --popover-foreground: #E8E8E8;
-  --primary: #FFFFFF;
-  --primary-foreground: #000000;
-  --secondary: #1A1A1A;
-  --secondary-foreground: #E8E8E8;
-  --muted: #111111;
-  --muted-foreground: #999999;
-  --accent: #D71921;
-  --accent-foreground: #FFFFFF;
-  --destructive: #D71921;
+  /* Warm editorial — ink navy, cream text, gold accent */
+  --background: #0B0E1C;
+  --foreground: #EDEAE2;
+  --card: #12162A;
+  --card-foreground: #EDEAE2;
+  --popover: #12162A;
+  --popover-foreground: #EDEAE2;
+  --primary: #EDEAE2;
+  --primary-foreground: #0B0E1C;
+  --secondary: #171B30;
+  --secondary-foreground: #EDEAE2;
+  --muted: #12162A;
+  --muted-foreground: #9B9686;
+  --accent: #C2A15C;
+  --accent-foreground: #0B0E1C;
+  --destructive: #C0392B;
   --destructive-foreground: #FFFFFF;
-  --border: #222222;
-  --input: #333333;
-  --ring: #FFFFFF;
+  --border: #23283F;
+  --input: #2C3150;
+  --ring: #EDEAE2;
 }
 
 @theme inline {
   --font-sans: var(--font-space-grotesk), var(--font-noto-sans-sc), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-space-mono), ui-monospace, monospace;
-  --font-display: var(--font-doto), var(--font-space-mono), monospace;
+  --font-display: var(--font-fraunces), Georgia, serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -88,14 +88,15 @@
     font-feature-settings: "ss01";
   }
   ::selection {
-    background: rgba(215, 25, 33, 0.2);
+    background: rgba(184, 146, 79, 0.25);
     color: var(--foreground);
   }
 }
 
 @layer utilities {
   .font-display {
-    font-family: var(--font-doto), var(--font-space-mono), monospace;
+    font-family: var(--font-fraunces), Georgia, serif;
+    font-optical-sizing: auto;
   }
   .dot-grid {
     background-image: radial-gradient(circle, #333333 1px, transparent 1px);
@@ -121,7 +122,7 @@
   }
   .scan-line {
     animation: scan 6s linear infinite;
-    background: linear-gradient(to bottom, transparent, rgba(215,25,33,0.15), transparent);
+    background: linear-gradient(to bottom, transparent, rgba(184,146,79,0.18), transparent);
     height: 80px;
     position: absolute;
     inset-x: 0;
@@ -130,11 +131,11 @@
 
   /* Portrait glow effect */
   .portrait-glow {
-    box-shadow: 0 0 0 1px rgba(215,25,33,0.1), 0 0 40px rgba(215,25,33,0.04);
+    box-shadow: 0 0 0 1px rgba(184,146,79,0.12), 0 0 40px rgba(184,146,79,0.05);
     transition: box-shadow 0.5s ease;
   }
   .portrait-glow:hover {
-    box-shadow: 0 0 0 1px rgba(215,25,33,0.25), 0 0 60px rgba(215,25,33,0.1);
+    box-shadow: 0 0 0 1px rgba(184,146,79,0.3), 0 0 60px rgba(184,146,79,0.12);
   }
 
   /* Work card hover accent */
@@ -142,7 +143,7 @@
     transition: border-color 0.3s ease;
   }
   .work-card-hover:hover {
-    border-color: rgba(215,25,33,0.3);
+    border-color: rgba(184,146,79,0.35);
   }
 
   /* Glowing accent line for section headers */
@@ -153,6 +154,6 @@
     height: 2px;
     background: var(--accent);
     margin-bottom: 12px;
-    box-shadow: 0 0 8px rgba(215,25,33,0.6);
+    box-shadow: 0 0 8px rgba(184,146,79,0.6);
   }
 }

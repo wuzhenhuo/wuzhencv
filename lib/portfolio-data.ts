@@ -2,6 +2,33 @@ export type Lang = "en" | "zh"
 
 export type L = { en: string; zh: string }
 
+export const heroHighlights: L[] = [
+  {
+    en: "Multimedia Designer — Beijing 2022 Winter Paralympics, Opening & Closing Ceremonies",
+    zh: "北京 2022 冬残奥会开闭幕式 · 多媒体设计",
+  },
+  {
+    en: "Silver Medal, Yingge Dance — 2025 World Humanoid Robot Games",
+    zh: "《英歌舞》获 2025 世界人形机器人运动会银牌",
+  },
+  {
+    en: "Silver & Bronze, Superpowered Boys / Tian Gong Ji Yue — 2026 World Humanoid Robot Games",
+    zh: "《超能少年》《天工伎乐》获 2026 世界人形机器人运动会银牌、铜牌",
+  },
+  {
+    en: "National S&T Innovation Award — DanceLab Motion Database",
+    zh: "「舞美动作数据库」获国家科技创新奖",
+  },
+  {
+    en: "Theatre of Tomorrow (TOT) — Excellence Award, TCDIG Global Digital Creativity Competition; Second Prize, 2023 LiChuang Competition; National Exemplary Case of Metaverse Innovation, 2024 & 2025",
+    zh: "「明日剧场」荣获 TCDIG 全球数字科技创意大赛优秀奖，2023 理创大赛二等奖，入选 2024、2025 全国元宇宙优秀产品示范案例",
+  },
+  {
+    en: "Ph.D., Digital Media Arts — Macau University of Science and Technology",
+    zh: "澳门科技大学数字媒体艺术博士",
+  },
+]
+
 export type Work = {
   year: string
   title: L
@@ -17,6 +44,73 @@ export type Work = {
 }
 
 export const selectedWorks: Work[] = [
+  {
+    year: "2026",
+    title: { en: "Homeward Flight", zh: "云海归雁" },
+    subtitle: { en: "云海归雁", zh: "Homeward Flight" },
+    role: { en: "Director · AIGC Documentary", zh: "导演 · AIGC 纪录片" },
+    description: {
+      en: "A documentary film structured around first-person narration. Starting from the personal memory of an Air Force pilot, the film traces back to a covert flight route taken to Taiwan in 1949 for historical reasons. Selected for AI FilmFest Serbia · AI Film 3 – AI Film and Art Festival, Arizona.",
+      zh: "《云海归雁》是一部以第一人称口述为线索的纪实电影。影片从一名空军飞行员的个人记忆出发，回溯 1949 年因历史原因迁往台湾的一次隐秘航线。入选 2026 塞尔维亚 AI 电影节及美国亚利桑那 AI Film 3 电影艺术节。",
+    },
+    tags: [
+      { en: "AIGC Film", zh: "AIGC 影像" },
+      { en: "Documentary", zh: "纪录片" },
+    ],
+    image: "/placeholder.svg",
+    video: "https://player.bilibili.com/player.html?bvid=BV1YQPuzVErT&autoplay=0",
+    website: "https://www.bilibili.com/video/BV1YQPuzVErT/",
+    venue: {
+      en: "AI FilmFest Serbia · AI Film 3 – AI Film and Art Festival, Arizona",
+      zh: "塞尔维亚 AI 电影节 · AI Film 3 亚利桑那 AI 电影艺术节",
+    },
+  },
+  {
+    year: "2026",
+    title: { en: "Superpowered Boys", zh: "超能少年" },
+    subtitle: { en: "超能少年", zh: "Superpowered Boys" },
+    role: { en: "Chief Creator", zh: "主创" },
+    description: {
+      en: "The robots are cast as youthful \"boys,\" showcasing their movement agility while foregrounding professional dance technique — creating a distinctive charm of contrast. In the choreography, motion-capture performers repeatedly refined the force dynamics of flips, turns, and jumps, striking a balance between the mechanical limits of the robots and artistic expression, emphasizing the power of each mechanical movement while delivering a lively, energetic stage style. Awarded the Silver Medal in the Dance Cheerleading Category at the 2026 World Humanoid Robot Games.",
+      zh: "将机器人设定为「少年」形象，在展现机器人运动灵活性的同时，突出舞蹈专业特色，形成独特的「反差萌」。舞蹈编排中，动捕演员反复优化翻腾、转体、跳跃动作的发力关系，在机械性能上限与艺术表达之间找到平衡，突出机械动作的力量感，呈现出活泼的舞台风格。荣获 2026 世界人形机器人运动会舞蹈啦啦操类银牌。",
+    },
+    tags: [
+      { en: "Robotics", zh: "机器人" },
+      { en: "Choreography", zh: "编舞" },
+      { en: "Motion Capture", zh: "动作捕捉" },
+    ],
+    image: "/placeholder.svg",
+    video: "https://player.bilibili.com/player.html?bvid=BV1zEhr6FEPF&autoplay=0",
+    youtubeUrl: "https://youtu.be/AhJ18iSjwtw",
+    website: "https://www.bilibili.com/video/BV1zEhr6FEPF/",
+    venue: {
+      en: "2nd World Humanoid Robot Games",
+      zh: "第二届世界人形机器人运动会",
+    },
+  },
+  {
+    year: "2026",
+    title: { en: "Tian Gong Ji Yue", zh: "天工伎乐" },
+    subtitle: { en: "天工伎乐", zh: "Tian Gong Ji Yue" },
+    role: { en: "Chief Creator", zh: "主创" },
+    description: {
+      en: "Injecting ancient Eastern grace into the fast pace of competition. Inspired by the classical apsara (flying-musician) imagery of the Dunhuang murals, the choreography team — working from an understanding of the robot's entirely different body — drew on the solemn, dignified bearing of the Vajra guardian figures to sharpen the force, pauses, and direction of each movement, emphasizing a sculptural sense of weight and stability while preserving Dunhuang's highly recognizable visual forms. Awarded the Bronze Medal in the Dance Cheerleading Category at the 2026 World Humanoid Robot Games.",
+      zh: "在节奏鲜活的比赛中注入一股东方古韵。作品灵感源自敦煌壁画经典的伎乐飞天意象，编导团队在读懂机器人「完全不同的身体」的基础上，选取金刚力士凝重凛然的形象，强化动作的力度、停顿与方向，凸显雕塑感与稳定感，同时保留辨识度极高的敦煌造型。荣获 2026 世界人形机器人运动会舞蹈啦啦操类铜牌。",
+    },
+    tags: [
+      { en: "Robotics", zh: "机器人" },
+      { en: "Choreography", zh: "编舞" },
+      { en: "Dunhuang Art", zh: "敦煌艺术" },
+    ],
+    image: "/placeholder.svg",
+    video: "https://player.bilibili.com/player.html?bvid=BV12Ahr6gEcE&autoplay=0",
+    youtubeUrl: "https://youtu.be/4p1MDWOr19Y",
+    website: "https://www.bilibili.com/video/BV12Ahr6gEcE/",
+    venue: {
+      en: "2nd World Humanoid Robot Games",
+      zh: "第二届世界人形机器人运动会",
+    },
+  },
   {
     year: "2025",
     title: { en: "Yingge Dance", zh: "英歌舞" },
@@ -41,13 +135,13 @@ export const selectedWorks: Work[] = [
     year: "2025",
     title: { en: "Heart of the Machine", zh: "机器之心" },
     subtitle: { en: "机器之心", zh: "Heart of the Machine" },
-    role: { en: "Director · AI Film", zh: "导演 · AI 影像" },
+    role: { en: "Director · AIGC Film", zh: "导演 · AIGC 影像" },
     description: {
       en: "An AI-generated short film exploring the emotional interior of artificial beings. Selected for the 1st Robot and Art Design Biennale (Beijing, 2025); First Prize in the Professional Category, AIGC Innovation Track, 2025 China Innovative Video Competition; Outstanding AI Film Award, Beijing Film Academy Awards 2025.",
       zh: "一部以 AI 生成技术探索人工生命情感内在的短片。入选 2025 首届机器人与艺术设计双年展（北京）；获 2025 中国创新影像大赛 AIGC 影像创新赛道专业组一等奖，以及 2025 北京电影学院学院奖 AI 类优秀影片奖。",
     },
     tags: [
-      { en: "AI Film", zh: "AI 影像" },
+      { en: "AIGC Film", zh: "AIGC 影像" },
       { en: "Award", zh: "获奖" },
     ],
     image: "/images/work-ai-film.jpg",
@@ -187,15 +281,34 @@ export type Exhibition = {
 export const exhibitions: Exhibition[] = [
   {
     year: "2026",
+    title: {
+      en: "Superpowered Boys · Tian Gong Ji Yue",
+      zh: "超能少年 · 天工伎乐",
+    },
+    venue: {
+      en: "2nd World Humanoid Robot Games · Dance Cheerleading, Silver & Bronze",
+      zh: "第二届世界人形机器人运动会 · 舞蹈啦啦操类银牌、铜牌",
+    },
+  },
+  {
+    year: "2026",
+    title: { en: "A Moment for Tea", zh: "得闲饮茶" },
+    venue: {
+      en: "Multimedia Design · China National Arts Fund / Macau Dance Association",
+      zh: "多媒体设计 · 国家艺术基金 / 澳门舞蹈总会",
+    },
+  },
+  {
+    year: "2026",
     title: { en: "Homeward Flight", zh: "云海归雁" },
     venue: {
-      en: "AI FilmFest Serbia · Official Selection",
-      zh: "塞尔维亚 AI 电影节 · 官方入围",
+      en: "AI FilmFest Serbia · AI Film 3 – AI Film and Art Festival, Arizona",
+      zh: "塞尔维亚 AI 电影节 · AI Film 3 亚利桑那 AI 电影艺术节",
     },
   },
   {
     year: "2025",
-    title: { en: "Heart of the Machine · AI Film", zh: "机器之心 · AI 影像" },
+    title: { en: "Heart of the Machine · AIGC Film", zh: "机器之心 · AIGC 影像" },
     venue: {
       en: "Beijing Film Academy Awards (BFA) / AI Film 3 – AI Film and Art Festival, Finalist / Africa AI Creativity Week & Awards, Finalist",
       zh: "北京电影学院学院奖 / AI Film 3· AI 电影与艺术节入围决选 / 非洲 AI 创意周颁奖礼入围决选",

@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Space_Grotesk, Space_Mono, Doto, Noto_Sans_SC } from "next/font/google"
+import { Space_Grotesk, Space_Mono, Doto, Noto_Sans_SC, Fraunces } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { LanguageProvider } from "@/components/language-provider"
 import { ThemeProvider } from "@/components/theme-provider"
@@ -24,6 +24,12 @@ const notoSansSC = Noto_Sans_SC({
   variable: "--font-noto-sans-sc",
   preload: false,
 })
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+  style: ["normal", "italic"],
+  variable: "--font-fraunces",
+})
 
 export const metadata: Metadata = {
   title: "Wu Zhen 吴振 — Multimedia Artist & Projection Designer",
@@ -47,7 +53,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${spaceGrotesk.variable} ${spaceMono.variable} ${doto.variable} ${notoSansSC.variable} bg-background`}
+      className={`${spaceGrotesk.variable} ${spaceMono.variable} ${doto.variable} ${notoSansSC.variable} ${fraunces.variable} bg-background`}
     >
       <body className="font-sans antialiased" suppressHydrationWarning>
         <ThemeProvider

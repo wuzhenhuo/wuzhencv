@@ -18,7 +18,7 @@ export function SectionHeader({
       <p className="font-mono text-[11px] tracking-[0.1em] uppercase text-muted-foreground">
         {index}
       </p>
-      <div className="h-px w-8 bg-accent" style={{boxShadow: '0 0 6px rgba(215,25,33,0.5)'}} />
+      <div className="h-px w-8 bg-accent" style={{boxShadow: '0 0 6px rgba(184,146,79,0.5)'}} />
       <h2 className="font-sans text-3xl font-light leading-tight tracking-[-0.02em] text-foreground md:text-4xl">
         {title}
       </h2>

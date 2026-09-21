@@ -3,9 +3,10 @@
 import Image from "next/image"
 import { useLanguage } from "@/components/language-provider"
 import { CVDownloadButton } from "@/components/cv-download-button"
+import { heroHighlights } from "@/lib/portfolio-data"
 
 export function HeroSection() {
-  const { t, lang } = useLanguage()
+  const { t, lang, pick } = useLanguage()
 
   return (
     <section id="top" className="relative isolate overflow-hidden border-b border-border">
@@ -52,9 +53,27 @@ export function HeroSection() {
             </p>
 
             {/* Description */}
-            <p className="mb-10 max-w-2xl font-sans text-sm leading-relaxed text-muted-foreground">
+            <p className="mb-8 max-w-2xl font-sans text-sm leading-relaxed text-muted-foreground">
               {t("hero.description")}
             </p>
+
+            {/* Record — scannable credential highlights */}
+            <div className="mb-10 max-w-2xl border-l border-border pl-5">
+              <p className="mb-3 font-mono text-[10px] tracking-[0.14em] uppercase text-muted-foreground">
+                {t("hero.record")}
+              </p>
+              <ul className="space-y-2.5">
+                {heroHighlights.map((item) => (
+                  <li
+                    key={item.en}
+                    className="flex items-baseline gap-3 font-sans text-sm leading-snug text-foreground"
+                  >
+                    <span className="h-1 w-1 shrink-0 translate-y-[-2px] rounded-full bg-accent" aria-hidden="true" />
+                    <span>{pick(item)}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
             {/* Meta */}
             <p className="mb-8 font-mono text-[11px] tracking-[0.1em] uppercase text-muted-foreground">
