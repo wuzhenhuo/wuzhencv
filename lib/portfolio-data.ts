@@ -681,24 +681,8 @@ export const teaching: TeachingItem[] = [
   {
     role: { en: "Standing Committee Member", zh: "常务委员" },
     institution: {
-      en: "CAAI Education Working Committee",
-      zh: "人工智能学会 教育工作委员会",
-    },
-    detail: { en: "", zh: "" },
-  },
-  {
-    role: { en: "Standing Committee Member", zh: "常务委员" },
-    institution: {
-      en: "Advanced Imaging Committee, China Society of Motion Picture and Television Engineers",
-      zh: "中国电影电视技术学会先进影像专委会",
-    },
-    detail: { en: "", zh: "" },
-  },
-  {
-    role: { en: "Standing Committee Member", zh: "常务委员" },
-    institution: {
-      en: "Network Technology & Intelligent Media Design Committee (2nd Session)",
-      zh: "第二届网络科技与智能媒体设计专委会",
+      en: "CAAI Education Working Committee · Advanced Imaging Committee, China Society of Motion Picture and Television Engineers · Network Technology & Intelligent Media Design Committee (2nd Session)",
+      zh: "人工智能学会 教育工作委员会、中国电影电视技术学会先进影像专委会、第二届网络科技与智能媒体设计专委会",
     },
     detail: { en: "", zh: "" },
   },
