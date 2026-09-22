@@ -679,7 +679,7 @@ export const teaching: TeachingItem[] = [
     detail: { en: "", zh: "" },
   },
   {
-    role: { en: "Committee Member", zh: "委员" },
+    role: { en: "Standing Committee Member", zh: "常务委员" },
     institution: {
       en: "CAAI Education Working Committee",
       zh: "人工智能学会 教育工作委员会",
