@@ -652,8 +652,14 @@ export const teaching: TeachingItem[] = [
     },
   },
   {
-    role: { en: "Doctoral Supervisor", zh: "博士生导师" },
-    institution: { en: "Shinawatra University, Thailand", zh: "泰国西那瓦大学" },
+    role: {
+      en: "Guest Professor · Doctoral Supervisor",
+      zh: "客座教授 · 博士生导师",
+    },
+    institution: {
+      en: "Shinawatra International University, Thailand",
+      zh: "泰国西那瓦国际大学",
+    },
     detail: { en: "Digital Media Arts", zh: "数字媒体艺术" },
   },
   {

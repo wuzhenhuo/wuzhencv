@@ -25,8 +25,8 @@ export function AboutSection() {
                 <span className="font-medium">Ph.D. in Digital Media</span>{" "}
                 from Macau University of Science and Technology. He is a
                 Visiting Scholar at the University of California, Irvine, and a
-                Guest Professor and Doctoral Supervisor at Shinawatra University,
-                Thailand. His work integrates digital media art, artificial
+                Guest Professor and Doctoral Supervisor at Shinawatra
+                International University, Thailand. His work integrates digital media art, artificial
                 intelligence, XR technologies, and performance, focusing on
                 interdisciplinary creation across{" "}
                 <span className="font-medium">dance</span>,{" "}
@@ -39,7 +39,7 @@ export function AboutSection() {
                 <span className="font-medium">舞台视觉设计师</span>，
                 <span className="font-medium">北京舞蹈学院</span>副教授，
                 <span className="font-medium">澳门科技大学数字媒体博士</span>
-                。美国加州大学尔湾分校访问学者、兼任泰国西那瓦大学客座教授、博士生导师。创作融合数字媒体艺术、人工智能、XR
+                。美国加州大学尔湾分校访问学者、兼任泰国西那瓦国际大学客座教授、博士生导师。创作融合数字媒体艺术、人工智能、XR
                 技术与表演，聚焦<span className="font-medium">舞蹈</span>、<span className="font-medium">影像</span>与
                 <span className="font-medium">交互媒体</span>的跨界创作。
               </p>
